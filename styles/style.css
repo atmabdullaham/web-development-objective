@@ -258,7 +258,7 @@ padding: 32px;
 .tech-bg3{
  background: rgba(255, 223, 0, 0.05);
 }
-.technology h3{
+.heading3{
  color: rgb(13, 19, 33);
   font-family: "Azeret Mono";
   font-size: 24px;
@@ -267,7 +267,7 @@ padding: 32px;
   letter-spacing: 0%;
   text-align: left;
 }
-.technology p{
+.para-category2{
  color: rgb(13, 19, 33);
   font-family: "Azeret Mono";
   font-size: 16px;
@@ -277,7 +277,7 @@ padding: 32px;
   text-align: left;
   opacity: 0.7;
 }
-.technology a {
+.a2 {
  color: rgb(13, 19, 33);
   font-family: "Azeret Mono";
   font-size: 16px;
@@ -286,4 +286,15 @@ padding: 32px;
   letter-spacing: 0%;
   text-align: left;
   text-decoration-line: underline;
+}
+.next-tech{
+ width: 100%;
+ box-sizing: border-box;
+  border: 1px solid rgba(13, 19, 33, 0.15);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  padding: 40px;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
 }
