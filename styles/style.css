@@ -66,6 +66,9 @@ color: rgb(13, 19, 33);
 .mb-48{
  margin-bottom: 48px;
 }
+.mb-24{
+ margin-bottom: 24px;
+}
 
 /* text-align */
 .text-center{
@@ -108,21 +111,20 @@ align-items: center;
 /*  Why Web development Section */
 
 #why-web-dev {
- width: 850px;
+ width: 852px;
  display: flex;
  flex-direction: column;
  justify-content: center;
  margin: 0px auto;
  align-items: center;
- border: 2px solid yellow;
 }
 
 /* Question and Answer */
 
-.q-and-a {
- margin-bottom: 96px;
+.h-and-p {
  width: 852px;
  height: 113px;
+ margin-bottom: 96px;
 }
 
 .secondary-heading {
@@ -143,7 +145,6 @@ align-items: center;
  justify-content: space-between;
  align-items: center;
  padding: 0px;
- border: 2px solid red;
  margin-bottom: 128px;
 
 }
@@ -154,7 +155,6 @@ align-items: center;
  display: flex;
  flex-direction: column;
  justify-content: space-between;
- border: 2px solid yellow;
 }
 
 .reason-description h3 {
@@ -166,8 +166,6 @@ align-items: center;
  letter-spacing: 0%;
  text-align: left;
 }
-.reason-img1 {}
-
 .learn-more-btn-span {
  width: 171px;
  height: 47px;
@@ -199,7 +197,6 @@ align-items: center;
   flex-direction: column;
   align-items: center;
   margin-bottom: 151px;
- 
 }
 
 .section-category-two .video-div{
@@ -287,19 +284,18 @@ padding: 32px;
  margin-bottom: 24px;
 }
 #support p{
- color: rgb(255, 255, 255);
+   width: 606px;
+  color: rgb(255, 255, 255);
   font-family: "Azeret Mono";
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0%;
-  text-align: center;
   opacity: 0.7;
-  margin-bottom: 24px;
-  width: 606px;
 }
 #support .input-container{
  display: flex;
+ gap: 16px;
 
 }
 
@@ -313,32 +309,23 @@ padding: 32px;
    display: flex;
    justify-content: flex-start;
    align-items: center;
-   gap: 10;
-   padding: 19px 20px 19px 20px;
+   padding: 19px 20px;
 }
 #submit{
  border-radius: 8px;
   background: rgb(255, 255, 255);
-   position: static;
    width: 120px;
    height: 57px;
    display: flex;
-   flex-direction: row;
    justify-content: center;
    align-items: center;
-   gap: 10;
-   padding: 17px 20px 17px 20px;
-   flex: none;
-   order: 1;
-   flex-grow: 0;
-   margin: 0px 16px;
    color: rgb(13, 19, 33);
     font-family: "Azeret Mono";
     font-size: 20px;
     font-weight: 600;
     line-height: 23px;
     letter-spacing: 0%;
-    text-align: center;
+ 
 }
 input::placeholder{
  color: rgba(13, 19, 33, 0.4);
