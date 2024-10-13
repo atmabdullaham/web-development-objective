@@ -84,8 +84,8 @@ color: rgb(13, 19, 33);
  height: 581px;
  display: flex;
  flex-direction: column;
-justify-content: center;
-align-items: center;
+ justify-content: center;
+ align-items: center;
 }
 .btn{
  color: rgb(255, 255, 255);
@@ -268,7 +268,7 @@ padding: 32px;
 }
 
 #support{
- background-image:linear-gradient(-180deg, rgba(0, 0, 0, 0.761), transparent), url("./assets/handshake.png");
+ background-image:linear-gradient(-180deg, rgba(0, 0, 0, 0.761), transparent), url("https: //github.com/atmabdullaham/web-development-objective/blob/main/assets/handshake.PNG");
  background-size:cover;
  background-repeat: no-repeat;
  background-position: center;
