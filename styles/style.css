@@ -31,7 +31,7 @@ nav> h1{
 #hero{
   width: 1440px;
   height: 652px;
-  background-image: url("/assets/Hero-bg.png");
+  background-image: url("../assets/Hero-bg.png");
   background-size: contain;
   /* margin: 0px auto; */
   display: flex;
@@ -268,7 +268,7 @@ padding: 32px;
 }
 
 #support{
- background-image:linear-gradient(-180deg, rgba(0, 0, 0, 0.761), transparent), url("https: //github.com/atmabdullaham/web-development-objective/blob/main/assets/handshake.PNG");
+ background-image:linear-gradient(-180deg, rgba(0, 0, 0, 0.761), transparent), url("../assets/handshake.png");
  background-size:cover;
  background-repeat: no-repeat;
  background-position: center;
