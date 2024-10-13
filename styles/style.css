@@ -268,7 +268,7 @@ padding: 32px;
 }
 
 #support{
- background-image:linear-gradient(-180deg, rgba(0, 0, 0, 0.761), transparent), url("./assets/handshake.PNG");
+ background-image:linear-gradient(-180deg, rgba(0, 0, 0, 0.761), transparent), url("./assets/handshake.png");
  background-size:cover;
  background-repeat: no-repeat;
  background-position: center;
