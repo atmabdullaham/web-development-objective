@@ -289,7 +289,7 @@ padding: 32px;
   /* Ensure relative positioning for ::before to align correctly */
   width: 1140px;
   height: 313px;
-  background-image: url("../assets/handshake.png");
+  background-image: url("../assets/handshake-min.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
