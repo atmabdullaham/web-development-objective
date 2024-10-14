@@ -2,6 +2,7 @@
  margin: 0px;
  padding: 0px;
 }
+
 body{
  width: 1440px;
  margin: 0 auto;
@@ -9,12 +10,6 @@ body{
  border: 2px solid red;
  
 }
-
-header{
- margin-bottom: 154px;
- border: 2px solid green;
-}
-
 nav{
  display: flex;
  justify-content: center;
@@ -33,6 +28,23 @@ nav> h1{
   letter-spacing: 0%;
   text-align: left;
 }
+.nav-btn{
+      font-family: "Azeret Mono";
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 23px;
+      text-align: center;
+      width: 244px;
+      height: 57px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;   
+      letter-spacing: 0%;
+      color: rgb(13, 19, 33);
+      border: 1px solid rgb(13, 19, 33);
+      border-radius: 8px;
+}
 /* Hero Section */
 #hero{
   width: 1440px;
@@ -50,7 +62,7 @@ nav> h1{
   height: 581px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border: 2px solid tomato;
 }
@@ -62,61 +74,79 @@ nav> h1{
   line-height: 68px;
   letter-spacing: 0%;
   text-align: center;
-  margin-bottom: 24px;
+}
+.btn {
+  color: #fff;
+  font-family: "Azeret Mono";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  background-color: rgb(13, 19, 33);
+  border: none;
+  border-radius: 8px;
+  width: 244px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-
+a {
+  text-decoration-line: none;
+}
 
 /* margin class */
+.mb-8{
+  margin-bottom: 8px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
 .mb-32{
  margin-bottom: 32px;
 }
 .mb-48{
  margin-bottom: 48px;
 }
-.mb-24{
- margin-bottom: 24px;
+.mb-96{
+  margin-bottom: 96px;
+}
+.mb-128{
+  margin-bottom: 128px;
+}
+.mb-154{
+  margin-bottom: 154px;
+}
+.mb-218{
+  margin-bottom: 218px;
+}
+.mb-151{
+  margin-bottom: 151px;
 }
 
 /* text-align */
 .text-center{
  text-align: center;
 }
-
 .text-left{
  text-align: left;
 }
 
-
-.btn{
- color: rgb(255, 255, 255);
-  font-family: "Azeret Mono";
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 23px;
-  letter-spacing: 0%;
-  text-align: center;
-  background-color:rgb(13, 19, 33);
-  border: none;
-}
-.btn-span{
- border-radius: 8px;
- background-color: rgb(13, 19, 33);
-  width: 244px;
-  height: 65px;
+#why-web-dev  {
+  width: 852px;
   display: flex;
   justify-content: center;
+  margin: 0px auto 218px;
   align-items: center;
+  border: 2px solid blue;
 }
-
-/*  Why Web development Section */
-
-#why-web-dev {
- width: 852px;
+ .div-container {
  display: flex;
  flex-direction: column;
  justify-content: center;
- margin: 0px auto;
  align-items: center;
  border: 2px solid blue;
 }
@@ -126,8 +156,7 @@ nav> h1{
 .h-and-p {
  width: 852px;
  height: 113px;
- margin-bottom: 96px;
-border: 2px solid salmon;
+ border: 2px solid salmon;
 }
 
 .secondary-heading {
@@ -138,7 +167,6 @@ border: 2px solid salmon;
  line-height: 37px;
  letter-spacing: 0%;
  text-align: center;
- margin-bottom: 24px;
  border: 2px solid black;
 }
 .type1-p {
@@ -160,8 +188,6 @@ border: 2px solid salmon;
  justify-content: space-between;
  align-items: center;
  padding: 0px;
- margin-bottom: 128px;
-
 }
 
 .reason-description {
@@ -211,20 +237,24 @@ border: 2px solid salmon;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 151px;
 }
 
 .section-category-two .video-div{
  box-sizing: border-box;
  border: 1px solid rgba(13, 19, 33, 0.2);
  border-radius: 16px;
- width: 100%;
+ width: 1140px;
  height: 614px;
+ overflow: hidden;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 .section-category-two iframe{
+width: 1076px;
 border-radius: 16px;
-padding: 32px;
 }
+
 .tech-container{
  display: flex;
  gap: 24px;
@@ -281,11 +311,8 @@ padding: 32px;
   gap: 24px;
   margin-bottom: 24px;
 }
-
-
-
 #support {
-  /* position: relative; */
+  position: relative;
   /* Ensure relative positioning for ::before to align correctly */
   width: 1140px;
   height: 313px;
@@ -305,17 +332,18 @@ padding: 32px;
   height: 100%;
   background: linear-gradient(180deg, rgba(7, 2, 17, 0.8), rgba(7, 2, 17, 0) 100%);
   z-index: 1;
-  /* Ensure it's above the background  */
-pointer-events: none;
-/* Prevent interaction with the overlay */
- }
-*/
+  /* Gradient layer */
+  pointer-events: none;
+}
+
+
 #support * {
   position: relative;
   /* Ensure content stays above the gradient */
-z-index: 2;
-/* Content layer
-Ensure text is readable over the background and gradient */
+  z-index: 2;
+  /* Content layer */
+
+  /* Ensure text is readable over the background and gradient */
 }
 
 #support h2 {
