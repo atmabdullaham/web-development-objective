@@ -6,18 +6,16 @@
 body{
  width: 1440px;
  margin: 0 auto;
- background-color: rgb(255, 255, 255);
- border: 2px solid red;
- 
+ background-color: rgb(255, 255, 255); 
 }
+/* Design Navigation bar and Hero Section */
+/* Design Nav */
 nav{
  display: flex;
  justify-content: center;
  align-items: center;
  margin: 36px 0px;
  gap: 768px;
- border: 2px solid goldenrod;
-
 }
 nav> h1{
  color: rgb(13, 19, 33);
@@ -51,11 +49,9 @@ nav> h1{
   height: 652px;
   background-image: url("../assets/Hero-bg.png");
   background-size: contain;
-  /* margin: 0px auto; */
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid brown;
 }
 .hero-content {
   width: 998px;
@@ -64,7 +60,6 @@ nav> h1{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid tomato;
 }
 .hero-content> h1{
  color: rgb(13, 19, 33);
@@ -93,12 +88,12 @@ nav> h1{
   cursor: pointer;
   text-decoration: none;
 }
-
 a {
   text-decoration-line: none;
 }
+/* ------Common Class for re-use------- */
+/* -----1.margin buttom----- */
 
-/* margin class */
 .mb-8{
   margin-bottom: 8px;
 }
@@ -117,17 +112,18 @@ a {
 .mb-128{
   margin-bottom: 128px;
 }
+.mb-151 {
+  margin-bottom: 151px;
+}
 .mb-154{
   margin-bottom: 154px;
 }
 .mb-218{
   margin-bottom: 218px;
 }
-.mb-151{
-  margin-bottom: 151px;
-}
 
-/* text-align */
+/*----- 2. text-align----- */
+
 .text-center{
  text-align: center;
 }
@@ -135,40 +131,36 @@ a {
  text-align: left;
 }
 
-#why-web-dev  {
+/* -----3. Heading and Paragraph Container */
+.hp-container {
   width: 852px;
-  display: flex;
-  justify-content: center;
-  margin: 0px auto 218px;
-  align-items: center;
-  border: 2px solid blue;
-}
- .div-container {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- border: 2px solid blue;
+  height: 113px;
 }
 
-/* Question and Answer */
-
-.h-and-p {
- width: 852px;
- height: 113px;
- border: 2px solid salmon;
-}
+/* -----4. Heading Type */
 
 .secondary-heading {
- color: rgb(13, 19, 33);
- font-family: "Azeret Mono";
- font-size: 32px;
- font-weight: 800;
- line-height: 37px;
- letter-spacing: 0%;
- text-align: center;
- border: 2px solid black;
+  color: rgb(13, 19, 33);
+  font-family: "Azeret Mono";
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 37px;
+  letter-spacing: 0%;
+  text-align: center;
 }
+
+.heading3 {
+  color: rgb(13, 19, 33);
+  font-family: "Azeret Mono";
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* -----5.Paragraph Type----- */
+
 .type1-p {
   color: rgb(13, 19, 33);
   font-family: "Azeret Mono";
@@ -177,10 +169,37 @@ a {
   line-height: 26px;
   letter-spacing: 0%;
   opacity: 0.7;
-  border: 2px solid teal;
-
 }
 
+/* -----6.Section Type----- */
+
+.section-category-two {
+  width: 1140px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* -----7.Div Type----- */
+
+ .div-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+/* ----------------------------------------------- */
+
+/* Design the "Why web-development" Section */
+
+#why-web-dev  {
+  width: 852px;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto 218px;
+  align-items: center;
+}
 .reason {
  display: flex;
  width: 850px;
@@ -189,7 +208,6 @@ a {
  align-items: center;
  padding: 0px;
 }
-
 .reason-description {
  width: 477px;
  height: 219px;
@@ -197,7 +215,6 @@ a {
  flex-direction: column;
  justify-content: space-between;
 }
-
 .reason-description h3 {
  color: rgba(13, 19, 33, 0.7);
  font-family: "Azeret Mono";
@@ -207,37 +224,28 @@ a {
  letter-spacing: 0%;
  text-align: left;
 }
-.learn-more-btn-span {
- width: 171px;
- height: 47px;
- display: flex;
- justify-content: center;
- align-items: center;
- box-sizing: border-box;
- border: 1px solid rgb(13, 19, 33);
- opacity: 0.7;
-}
-
 .learn-more-btn {
- color: rgb(13, 19, 33);
- font-family: "Azeret Mono";
- font-size: 20px;
- font-weight: 600;
- line-height: 23px;
- letter-spacing: 0%;
- text-align: center;
- border: none;
-}
-
-/* Inspiration Section */
-
-.section-category-two{
-  width: 1140px;
-  margin: 0px auto;
+  color: rgb(13, 19, 33);
+  font-family: "Azeret Mono";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 1px solid rgb(13, 19, 33);
+  width: 171px;
+  height: 47px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+  opacity: 0.7;
 }
+/* ---------------------------------------- */
+
+/*-----Design "My Inspiration" Section----- */
 
 .section-category-two .video-div{
  box-sizing: border-box;
@@ -254,6 +262,9 @@ a {
 width: 1076px;
 border-radius: 16px;
 }
+/* ------------------------------------------------ */
+
+/* -----Design the "My Current Target" Section----- */
 
 .tech-container{
  display: flex;
@@ -267,10 +278,8 @@ border-radius: 16px;
   align-items: flex-start;
   gap: 32;
   padding: 40px;
-  border-radius: 16px;
-  
+  border-radius: 16px; 
 }
-
 .tech-bg1{
  background: rgba(255, 76, 30, 0.05);
 }
@@ -280,16 +289,6 @@ border-radius: 16px;
 .tech-bg3{
  background: rgba(255, 223, 0, 0.05);
 }
-.heading3{
- color: rgb(13, 19, 33);
-  font-family: "Azeret Mono";
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 36px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-
 .a2 {
  color: rgb(13, 19, 33);
   font-family: "Azeret Mono";
@@ -300,9 +299,13 @@ border-radius: 16px;
   text-align: left;
   text-decoration-line: underline;
 }
+/* ---------------------------------------------------- */
+
+/* -----Design The "My Next target Section"-----  */
+
 .next-tech{
- width: 100%;
- box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
   border: 1px solid rgba(13, 19, 33, 0.15);
   border-radius: 16px;
   background: rgb(255, 255, 255);
@@ -311,6 +314,10 @@ border-radius: 16px;
   gap: 24px;
   margin-bottom: 24px;
 }
+/* ---------------------------------------------------- */
+
+/* -----Design the "I Need Support"----- */
+
 #support {
   position: relative;
   /* Ensure relative positioning for ::before to align correctly */
@@ -335,17 +342,12 @@ border-radius: 16px;
   /* Gradient layer */
   pointer-events: none;
 }
-
-
 #support * {
   position: relative;
   /* Ensure content stays above the gradient */
   z-index: 2;
   /* Content layer */
-
-  /* Ensure text is readable over the background and gradient */
 }
-
 #support h2 {
   color: rgb(255, 255, 255);
   font-family: "Azeret Mono";
@@ -366,47 +368,41 @@ border-radius: 16px;
   letter-spacing: 0%;
   opacity: 0.7;
 }
-
-
-
-
-
 #support .input-container{
  display: flex;
  gap: 16px;
 
 }
-
 #email{
- box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid rgba(13, 19, 33, 0.15);
   border-radius: 8px;
   background: rgb(255, 255, 255);
-   width: 548px;
-   height: 57px;
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   padding: 19px 20px;
+  width: 548px;
+  height: 57px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 19px 20px;
 }
 #submit{
- border-radius: 8px;
+  border-radius: 8px;
   background: rgb(255, 255, 255);
-   width: 120px;
-   height: 57px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: rgb(13, 19, 33);
-    font-family: "Azeret Mono";
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 23px;
-    letter-spacing: 0%;
+  width: 120px;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(13, 19, 33);
+  font-family: "Azeret Mono";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
  
 }
 input::placeholder{
- color: rgba(13, 19, 33, 0.4);
+  color: rgba(13, 19, 33, 0.4);
   font-family:"Azeret Mono";
   font-size: 16px;
   font-weight: 400;
@@ -415,36 +411,36 @@ input::placeholder{
   text-align: left;
 }
 .container{
- position: static;
- width: 1044px;
- height: 185px;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- gap: 24;
- padding: 64px 48px;
+  position: static;
+  width: 1044px;
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24;
+  padding: 64px 48px;
 }
+/* -------------------------------------------------------- */
+
+/* -----Design the Footer Section----- */
 
 footer{
- display: flex;
- justify-content: space-between;
- width: 1140px;
- margin: 32px auto;
- align-items: center; 
-  }
-
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+  margin: 32px auto;
+  align-items: center; 
+}
 footer p {
- color: rgb(13, 19, 33);
+  color: rgb(13, 19, 33);
   font-family: "Azeret Mono";
   font-size: 20px;
   font-weight: 600;
   line-height: 23px;
   letter-spacing: 0%;
   text-align: center;
-  
 }
-
 .img-cont img{
  display: block;
 }
@@ -452,3 +448,4 @@ footer p {
  display: flex;
  gap: 24px;
 }
+/* ---------------------------------------------- */
